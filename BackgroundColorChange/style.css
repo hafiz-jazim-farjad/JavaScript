@@ -1,0 +1,52 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: lightgray;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.button {
+    padding: 25px;
+    margin: 10px 0px;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.b-1 {
+    background-color: red;
+}
+
+.b-2 {
+    background-color: green;
+}
+
+.b-3 {
+    background-color: yellow;
+}
+
+.b-4 {
+    background-color: blue;
+}
