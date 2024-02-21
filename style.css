@@ -1,0 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 20px);
+    min-width: calc(100% - 40px);
+    background: linear-gradient(90deg, #22c1c3, #fdbb2d);
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+}
+
+a {
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    color: black;
+
+}
