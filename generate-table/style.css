@@ -1,0 +1,62 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    gap: 10px;
+}
+
+input,
+button {
+    text-align: center;
+    outline: none;
+    border: 2px solid white;
+    background-color: lightgray;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12pt;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    color: red;
+}
+
+input:hover,
+input:focus,
+button:hover,
+button:focus {
+    border-color: red;
+}
+
+p {
+    height: auto;
+    width: auto;
+}
+
+table,
+tr,
+td {
+    margin: 0px;
+    padding: 0px;
+}
+
+td {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid white;
+    color: white;
+    font-size: 12pt;
+}
