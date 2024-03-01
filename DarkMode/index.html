@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        button {
+            background-color: black;
+            border: 2px solid white;
+            color: white;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body class="flex">
+    <main class="flex">
+        Dark mode using Js
+        <!-- Dark mode toggle -->
+        <div class="darkmode-toggle">
+
+            <button id="dark-light">Dark / Light</button>
+
+            <!-- <button id="dark">Dark</button> -->
+            <!-- <button id="light">Light</button> -->
+        </div>
+    </main>
+    <script>
+        // first way 
+        // const darkButton = document.getElementById('dark');
+        // const lightButton = document.getElementById('light');
+        // darkButton.addEventListener("click", dark)
+        // lightButton.addEventListener("click", light)
+
+        // function dark() {
+        //     document.body.style.backgroundColor = "black";
+        //     document.body.style.color = "white";
+        // }
+        // function light() {
+        //     document.body.style.backgroundColor = "white";
+        //     document.body.style.color = "black";
+        // }
+
+
+        // second way (thats mt favorite) 
+
+        const DarkLight = document.getElementById('dark-light');
+        DarkLight.addEventListener("click", dark_light);
+        document.body.style.backgroundColor = "white";
+        function dark_light() {
+            if (document.body.style.backgroundColor == "white") {
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }
+            else if (document.body.style.backgroundColor == "black") {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+            else {
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }
+
+        }
+
+
+
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
