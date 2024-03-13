@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: lightblue;
+}
+
+#main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#inner-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(250px - 4px);
+    width: calc(250px - 4px);
+    border: 2px solid red;
+}
