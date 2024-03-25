@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List </title>
+</head>
+
+<body>
+    <main>
+        <h1>To Do List</h1>
+        <br>
+        <div class="task-container">
+            <input type="text" name="text" id="task_input" placeholder="Enter the task" autofocus value="test">
+            <button onclick="addTask()">Add Task</button>
+            <button onclick="ClearTask()">Clear Task</button>
+        </div>
+        <div class="list-container">
+            <ul id="parent-list">
+                <!-- <li id="list"></li> -->
+            </ul>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
