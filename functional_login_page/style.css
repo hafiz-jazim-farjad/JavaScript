@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: red; */
+}
+
+main button,
+main input {
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px black;
+}
+
+main input:focus,
+main button:focus,
+main input:hover,
+main button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+#showHIDEpassword,
+main input[type='button'],
+main button {
+    cursor: pointer;
+}
+
+#showHIDEpassword {
+    margin-left: -40px;
+    background-color: white;
+    padding: 5px 4px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+}
