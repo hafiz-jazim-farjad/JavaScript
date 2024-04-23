@@ -61,7 +61,7 @@ const loginCheck = () => {
     let forEmail = localStorage.getItem('email')
     let forPass = localStorage.getItem('password')
     if (forEmail !== null && forPass !== null) {
-        if (window.location.pathname != '/JavaScript/functional_login_page/home.html') {
+        if (window.location.pathname !== '/JavaScript/functional_login_page/home.html') {
             window.location.pathname = '/JavaScript/functional_login_page/home.html'
         }
     }
