@@ -15,11 +15,9 @@ const signUp = () => {
         else {
             alert('Please enter email and password')
         }
-    }
-    else if (forEmail !== null && forPass !== null) {
+    } else if (forEmail !== null && forPass !== null) {
         alert('You already sign Up please Login')
-    }
-    else {
+    } else {
         alert('Please refresh your site')
     }
 }
