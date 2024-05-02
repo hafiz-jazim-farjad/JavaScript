@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Search Functionality with JS</title>
+</head>
+
+<body>
+    <main>
+        <div id="innerDiv" class="innerDiv">
+            <input type="search" name="searchInput" id="searchInput" placeholder="Search" onchange="search(event)"
+                onfocus="forFocus()" onblur="forBlured()">
+            <button id="searchBtn" onclick="searchBtnClick()">Search</button>
+            <div id="resultDiv">
+
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
