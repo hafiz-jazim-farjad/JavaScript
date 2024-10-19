@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none; /* Default cursor ko hide kar diya */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #6e45e2, #88d3ce); /* Gradient background */
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+.cursor, .cursor-trail {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none; /* Mouse events ko disable kiya */
+    mix-blend-mode: difference; /* Blend effect for a cool look */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.cursor {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    z-index: 1000;
+    transform: translate(-50%, -50%); /* Cursor ko center align kiya */
+}
+
+.cursor-trail {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    z-index: 999;
+    transform: translate(-50%, -50%) scale(1.5); /* Trail ko center aur scale kiya */
+    transition: all 0.1s ease-out; /* Smooth trail */
+}
